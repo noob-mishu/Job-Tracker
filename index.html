@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: "Outfit", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container w-11/12 mx-auto mt-10">
+    <h1 class="font-bold text-3xl">Job Application Tracker</h1>
+
+    <div class="flex gap-5 mt-5">
+      <div class="left w-[500px] border-2 border-gray-100 rounded-lg p-5">
+        <p class="font-semibold text-xl ">Total</p>
+        <p class="font-bold text-blue-700 text-xl">0</p>
+
+      </div>
+
+      <div class="mid w-[500px] border-2 border-gray-100 rounded-lg p-5 ">
+        <p class="font-semibold text-xl ">Total</p>
+        <p class="font-bold text-green-700 text-xl">0</p>
+
+      </div>
+
+      <div class="right w-[500px] border-2 border-gray-100 rounded-lg p-5 ">
+        <p class="font-semibold text-xl ">Total</p>
+        <p class="font-bold text-red-700 text-xl">0</p>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="w-11/12 mx-auto">
+    <h2 class="text-indigo-800 font-semibold text-lg">Available Jobs</h2>
+
+    <div id="buttons" class="mt-5">
+      <a href="#" class="bg-blue-500 text-white py-1 px-6 rounded hover:bg-blue-600">All</a>
+      <a href="#" class="bg-blue-500 text-white py-1 px-6 rounded hover:bg-blue-600">Interview</a>
+      <a href="#" class="bg-blue-500 text-white py-1 px-6 rounded hover:bg-blue-600">Rejected</a>
+    </div>
+  </section>
+
+  <section class="w-11/12 mx-auto">
+    <div id="job-1" class="card mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">TechNova Solutions </h2>
+
+          <a class="remove-btn text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class="text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="jobs" class="card mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">Mishu Solutions </h2>
+
+          <a class="remove-btn text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class=" text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+    <div id="jobs" class="mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">TechNova Solutions </h2>
+
+          <a class="remove-btn text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class="text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="jobs" class="mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">TechNova Solutions </h2>
+
+          <a class="text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class="text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="jobs" class="mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">TechNova Solutions </h2>
+
+          <a class="text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class="text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="jobs" class="mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">TechNova Solutions </h2>
+
+          <a class="text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class="text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="jobs" class="mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">TechNova Solutions </h2>
+
+          <a class="text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class="text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="jobs" class="mt-5 border-2 border-gray-100 rounded-lg p-5">
+      <div class="space-y-2">
+        <div class="flex justify-between">
+          <h2 class="font-semibold text-lg text-indigo-800">TechNova Solutions </h2>
+
+          <a class="text-red-500 rounded-full border border-red-100 p-2 cursor-pointer hover:text-red-700"><i
+              class="fa-regular fa-trash-can"></i></a>
+        </div>
+
+
+        <p class="text-gray-600">Frontend Developer</p>
+        <p class="text-gray-600">Remote • Full-time • $90,000 - $120,000</p>
+        <a class="text-blue-600 bg-gray-200 px-5 py-2 font-medium rounded-sm mt-10 mb-10">NOT APPLIED</a>
+        <p class="text-gray-600">
+          Build responsive web interfaces using React and Tailwind CSS. Collaborate with design teams to deliver modern
+          UI
+          experiences.
+        </p>
+
+        <div class="mt-5">
+          <a href="#"
+            class=" text-green-500 border border-green-500 font-medium py-1 px-6 rounded hover:bg-green-600 hover:text-white">INTERVIEW</a>
+          <a href="#"
+            class="text-red-500 border border-red-500 font-medium py-1 px-6 rounded hover:bg-red-600 hover:text-white">REJECTED</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+</body>
+
+<script src="scripts/remove.js"></script>
+
+</html>
