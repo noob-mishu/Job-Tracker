@@ -3,4 +3,8 @@ document.addEventListener("click", function (e) {
         e.target.closest(".card").remove();
         alert("Job removed successfully!");
     }
+
+
+    // Othoba Eivabeo Kora Jete Pare
+    
 });
