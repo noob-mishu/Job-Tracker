@@ -35,18 +35,18 @@
     <div class="flex gap-5 mt-5">
       <div class="left w-[500px] border-2 border-gray-100 rounded-lg p-5">
         <p class="font-semibold text-xl ">Total</p>
-        <p class="font-bold text-blue-700 text-xl">0</p>
+        <p id="total-job" class="font-bold text-blue-700 text-xl">8</p>
 
       </div>
 
       <div class="mid w-[500px] border-2 border-gray-100 rounded-lg p-5 ">
-        <p class="font-semibold text-xl ">Total</p>
+        <p class="font-semibold text-xl ">Interviewed</p>
         <p class="font-bold text-green-700 text-xl">0</p>
 
       </div>
 
       <div class="right w-[500px] border-2 border-gray-100 rounded-lg p-5 ">
-        <p class="font-semibold text-xl ">Total</p>
+        <p class="font-semibold text-xl ">Rejected</p>
         <p class="font-bold text-red-700 text-xl">0</p>
 
       </div>
@@ -55,7 +55,11 @@
   </section>
 
   <section class="w-11/12 mx-auto">
-    <h2 class="text-indigo-800 font-semibold text-lg">Available Jobs</h2>
+    <div class="flex items-center justify-between mt-2">
+      <h2 class="text-indigo-800 font-semibold text-lg">Available Jobs</h2>
+      <p class="text-indigo-800 font-normal text-lg"><span id="total-jobs">8</span> jobs available</p>
+    </div>
+    
 
     <div id="buttons" class="mt-5">
       <a href="#" class="bg-blue-500 text-white py-1 px-6 rounded hover:bg-blue-600">All</a>
