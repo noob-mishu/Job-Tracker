@@ -62,13 +62,13 @@
     
 
     <div id="buttons" class="mt-5">
-      <a href="#" class="bg-blue-500 text-white py-1 px-6 rounded hover:bg-blue-600">All</a>
-      <a href="#" class="bg-blue-500 text-white py-1 px-6 rounded hover:bg-blue-600">Interview</a>
-      <a href="#" class="bg-blue-500 text-white py-1 px-6 rounded hover:bg-blue-600">Rejected</a>
+      <button onclick="showonly('all-jobs',this)" class="bg-blue-500 text-white py-1 px-6 rounded cursor-pointer hover:bg-blue-600">All</button>
+      <button onclick="showonly('interviewed-jobs',this)" class="bg-blue-500 text-white py-1 px-6 rounded cursor-pointer hover:bg-blue-600">Interview</button>
+      <button onclick="showonly('rejected-jobs',this)" class="bg-blue-500 text-white py-1 px-6 rounded cursor-pointer hover:bg-blue-600">Rejected</button>
     </div>
   </section>
 
-  <section class="w-11/12 mx-auto">
+  <section id="all-jobs" class="hidden w-11/12 mx-auto">
     <!-- Job-1  -->
     <div class="card mt-5 border-2 border-gray-100 rounded-lg p-5">
       <div class="space-y-2">
@@ -313,5 +313,6 @@
 </body>
 
 <script src="scripts/remove.js"></script>
+<script src="scripts/common.js"></script>
 
 </html>
